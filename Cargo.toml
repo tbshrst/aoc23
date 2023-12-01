@@ -1,8 +1,16 @@
 [workspace]
 resolver = "2"
 
-members = []
+members = [
+    "src/day1",
+    "src/lib",
+]
 
-[lints.clippy]
-let_and_return="allow"
+[workspace.dependencies]
+anyhow = "1.0"
+lib = { path = "src/lib"}
 
+[workspace.lints.clippy]
+let_and_return = "allow"
+ptr_arg = "allow"
+new_without_default = "allow"
