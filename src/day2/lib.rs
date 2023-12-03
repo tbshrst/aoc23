@@ -160,7 +160,7 @@ mod tests {
     fn test_kube_game_task_1() -> Result<()>
     {
         let _t = timer::Timer::new();
-        let input = lib::read_input("input.txt")?;
+        let input = lib::read_vectored_input("input.txt")?;
         let vec = lib::filter_empty_lines(input);
 
         let games = Game::parse_games(vec)?;
@@ -208,7 +208,7 @@ mod tests {
     fn test_kube_game_task_2() -> Result<()>
     {
         let _t = timer::Timer::new();
-        let input = lib::read_input("input.txt")?;
+        let input = lib::read_vectored_input("input.txt")?;
         let input = lib::filter_empty_lines(input);
 
         let mut total_summed_power = 0;

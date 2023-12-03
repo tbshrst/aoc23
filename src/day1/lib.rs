@@ -78,7 +78,7 @@ mod tests {
     fn test_sum_outer_digits_task_1() -> Result<()>
     {
         let _t = timer::Timer::new();
-        let input = lib::read_input("input.txt")?;
+        let input = lib::read_vectored_input("input.txt")?;
         let vec = lib::filter_empty_lines(input);
         let vec = filter_outer_digits(vec);
         let sum = sum_outer_digits(&vec);
@@ -111,7 +111,7 @@ mod tests {
     fn test_sum_outer_digits_task_2() -> Result<()>
     {
         let _t = timer::Timer::new();
-        let input = lib::read_input("input.txt")?;
+        let input = lib::read_vectored_input("input.txt")?;
         let vec = lib::filter_empty_lines(input);
         let vec = words_to_digits(vec);
         let vec = filter_outer_digits(vec);
