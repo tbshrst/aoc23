@@ -5,11 +5,13 @@ members = [
     "src/day1",
     "src/day2",
     "src/day3",
+    "src/day4",
     "src/lib",
 ]
 
 [workspace.dependencies]
 anyhow = "1.0"
+itertools = "0.12"
 lib = { path = "src/lib"}
 
 [workspace.lints.clippy]
